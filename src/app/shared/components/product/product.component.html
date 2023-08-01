@@ -1,0 +1,33 @@
+
+
+        <app-dumy></app-dumy>
+
+        <!-- <p>
+            This is product {{productName}} and 
+            whose id is {{productId}} and status is    
+            {{pStatus}}. -->
+        <!-- </p>  -->
+
+        <p>
+            This is product {{productName}} and 
+            whose id is {{getProductId()}} and status is    
+            {{pStatus}}.
+        </p>                                                <!-- stringInterpollation binding  -->
+
+        <p [innerHTML]="productName">  <!-- property binding  -->
+            
+        </p>
+
+        <p [innerText]="pStatus"></p>
+
+        <p [innerHTML]="'Iphone'"></p>
+
+
+        <p [innerHTML]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'">
+
+        </p>
+
+        <!-- <input type="text" class="form-control my-5" [value]="skillName"> -->
+
+        <input type="text" class="form-control" [value]="'Angular And Node'">
+

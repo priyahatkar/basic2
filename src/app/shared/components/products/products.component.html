@@ -1,0 +1,29 @@
+
+<app-product></app-product>
+<div class="my-4">
+
+    <button class="btn btn-success m-3" [disabled]="cartCount === 0" (click)="onProductAdd()">Add Product</button>
+
+    <button class="btn btn-danger m-3"
+    (click)="onProductRemove()"
+    >Remove Product</button>
+
+    <p class="alert alert-info" [innerText]="productStatus">
+
+    </p>
+
+</div>
+
+<hr>
+
+<input type="text" class="form-control mb-4" (keyup)="onProductSearch($event)">
+
+<p class="alert alert-warning" [innerHtml]="searchName"
+*ngIf="searchName.length >0">
+
+</p>
+<hr>
+
+
+
+
