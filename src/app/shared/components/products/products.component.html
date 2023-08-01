@@ -2,10 +2,11 @@
 
 <div class="my-4">
 
-    <button class="btn btn-success m-3" [disabled]="cartCount === 0" (click)="onProductAdd()">Add Product</button>
+    <button class="btn btn-success m-3" [disabled]="isDisabled" (click)="onProductAdd()">Add Product</button>
 
     <button class="btn btn-danger m-3"
     (click)="onProductRemove()"
+    [disabled]="cartCount === 0"
     >Remove Product</button>
 
     <p class="alert alert-info" [innerText]="productStatus">
