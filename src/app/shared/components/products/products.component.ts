@@ -30,9 +30,9 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.cartCount++;
     
     if(this.cartCount === 1){
-      this.productStatus =  `<strong>${this.cartCount}</strong> Product is Added in Cart !!!`;
+      this.productStatus =  `${this.cartCount} Product is Added in Cart !!!`;
     }else{
-      this.productStatus =  `<strong>${this.cartCount}</strong> Products are Added in Cart !!!`;
+      this.productStatus =  `${this.cartCount} Products are Added in Cart !!!`;
     }
   }
 
@@ -50,7 +50,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     if(this.cartCount < 1){
       this.productStatus =  `No Product is Added Yet`;
     }else{
-      this.productStatus =  `<strong>${this.cartCount}</strong> Products are Added in Cart !!!`;
+      this.productStatus =  `${this.cartCount} Products are Added in Cart !!!`;
     }
   }
 
